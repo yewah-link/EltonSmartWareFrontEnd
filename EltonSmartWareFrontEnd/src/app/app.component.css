@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+.spacer {
+    flex: 1; /* This will make the spacer take up all available space */
+}
+
+button {
+    color: white;
+    text-transform: uppercase;
+    margin-left: 8px;
+    background-color: blue; /* Set background color to blue */
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold; /* Make the text bold */
+}
+
+button.active {
+    font-weight: 600;
+}
+
+.custom-toolbar {
+    background-color: #ff0000;
+}
