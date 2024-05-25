@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: SignUpComponent },
   { path: 'register', loadChildren: () => import('./signup/signup.module').then(m => m.SignUpModule) },
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) }
 ];
 
 @NgModule({
