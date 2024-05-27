@@ -1,0 +1,76 @@
+/* signup.component.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8; /* Light background for contrast */
+  padding: 20px;
+}
+
+mat-card {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 2px solid #3D52A0; /* Main border color */
+  background: linear-gradient(to top, rgba(61, 82, 160, 0.8), rgba(112, 145, 230, 0.8), rgba(134, 151, 196, 0.8)); /* Gradient with translucency */
+  backdrop-filter: blur(10px); /* Optional: Add a blur effect to the background behind the card */
+}
+
+mat-card-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3D52A0; /* Main color for the title */
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+mat-form-field.mat-form-field-outline .mat-form-field-outline-end {
+  border-color: #3D52A0; /* Main outline color for form fields */
+}
+
+mat-form-field.mat-focused .mat-form-field-outline-thick {
+  border-color: #3D52A0; /* Main outline color for focused form fields */
+}
+
+mat-form-field.mat-focused .mat-form-field-label {
+  color: #3D52A0; /* Main color for the form field label when focused */
+}
+
+button {
+  width: 100%;
+  margin-top: 16px;
+  background-color: #3D52A0; /* Main button background color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #7091E6; /* Lighter color for hover effect */
+}
+
+button.active {
+  font-weight: 600;
+  background-color: #ff7200; /* Different shade for active button */
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.error-snackbar {
+  background-color: #d32f2f !important; /* Red background for error snackbar */
+  color: #ffffff !important; /* White text for error snackbar */
+}
